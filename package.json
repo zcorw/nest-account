@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "npm run build --workspace @tts-workbench/account-core && npm run build --workspace @tts-workbench/account-postgres",
-    "test": "npm run build && node --test tests/*.test.mjs",
+    "test": "npm run build && node tests/setup-database.mjs && node --test tests/*.test.mjs",
     "pack:all": "npm pack --workspace @tts-workbench/account-core --pack-destination artifacts && npm pack --workspace @tts-workbench/account-postgres --pack-destination artifacts"
   },
   "devDependencies": {
