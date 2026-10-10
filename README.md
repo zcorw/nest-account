@@ -5,7 +5,7 @@
 ```sh
 npm ci
 npm run build
-# TEST_DATABASE_URL 指向隔离 PostgreSQL，未提供时DB测试明确skip
+# TEST_DATABASE_URL 指向隔离 PostgreSQL；测试启动前统一迁移，未提供时DB测试明确skip
 npm test
 npm run pack:all
 ```
